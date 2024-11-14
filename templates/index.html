@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumettre une Musique</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="icon" href="static/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Soumettre une Musique</h2>
+    
+    <form id="musicForm" method="POST" action="/submit">
+        <label for="username">Nom d'utilisateur</label>
+        <input type="text" id="username" name="username" required placeholder="Entrez votre nom d'utilisateur">
+    
+        <label for="artist">Nom de l'artist</label>
+        <input type="text" id="artist" name="artist" required placeholder="Entrez le nom de l'artist">
+    
+        <label for="title">Title de la musique</label>
+        <input type="text" id="title" name="title" required placeholder="Entrez le title de la musique">
+    
+        <button type="submit">Soumettre</button>
+    </form>
+</div>
+
+</body>
+</html>

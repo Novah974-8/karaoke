@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erreur 404 - Chanson non trouvée</title>
+  <link rel="stylesheet" href="karaoke.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1a73e8, #d5006d);
+      margin: 0;
+    }
+    .error-container {
+      text-align: center;
+      padding: 40px;
+      max-width: 600px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      color: #ffffff;
+    }
+    .error-title {
+      font-size: 3em;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #ffcc00; /* Titre jaune pour attirer l'attention */
+    }
+    .error-message {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+    .refresh-button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #ffffff;
+      background: linear-gradient(45deg, #d5006d, #1a73e8);
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .refresh-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      background: linear-gradient(45deg, #1a73e8, #d5006d);
+    }
+  </style>
+</head>
+<body>
+  <div class="error-container">
+    <h1 class="error-title">Erreur 404</h1>
+    <p class="error-message">Chanson non trouvée</p>
+    <p>Remplissez le formulaire puis rechargez cette page.</p>
+    <button class="refresh-button" onclick="location.reload()">Recharger</button>
+  </div>
+</body>
+</html>

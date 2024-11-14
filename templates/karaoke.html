@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profitez d'un karaoké en ligne avec vos chansons préférées et les lyrics affichées.">
+    <meta name="keywords" content="karaoké, musique, lyrics, en ligne">
+    <link rel="icon" href="static/img/favicon.ico" type="image/x-icon">
+    <title>Karaoké en Ligne</title>
+    <link rel="stylesheet" href="/static/css/karaoke.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="video-section">
+                <div>
+                    <h2>{{ pseudo }} va chanter "{{ title }}" de {{ artist }}</h2> <!-- J'ajoute les variables -->
+                </div>
+                <iframe src="{{ video_url }}" frameborder="0" allowfullscreen></iframe>
+
+                <!-- Bouton pour changer de chanson -->
+                <button class="change-song-button" onclick="window.location.reload()">
+                    Changer de chanson
+                </button>
+            </div>
+
+            <div class="lyrics">
+                <h2>Paroles</h2>
+                <pre>{{ lyrics }}</pre> <!-- J'ajoute les paroles -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-content">
+        <div class="copyright">
+            © 2024 Karaoké en Ligne. Réalisé par Noah Techer, Anthony Hoareau et Miguel Ilata.
+        </div>
+    </footer>
+
+    <script>
+        // Fonction pour ouvrir un nouvel onglet pour soumettre une nouvelle chanson
+        function changerChanson() {
+            window.location.href = '/';  // Ouvre dans le même onglet
+        }
+    </script>
+</body>
+</html>
